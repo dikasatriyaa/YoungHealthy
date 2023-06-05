@@ -1,0 +1,150 @@
+
+@media screen and (max-width:499px) {
+
+}@media screen and (min-width:500px) {
+
+}@media screen and (min-width:650px) {
+
+}@media screen and (min-width:700px) {
+
+}@media screen and (max-width:767px) {
+    #quote {
+        margin-top: 400px;
+        margin-bottom: 40px;
+    }
+
+    .main-artikel {
+        margin-bottom: 40px
+    }
+
+    .title-artikel{
+        margin-top: 0;
+    }
+
+    #bmi {
+
+        margin-top: 40px;
+    }
+    #post, #medicine {
+        margin: 50px auto;
+        grid-template-columns: 1fr;
+    }
+
+}@media screen and (max-width:992px) {
+
+    .main-artikel h1 {
+        font-size:x-large;
+    }
+    .main-artikel p {
+        font-size:small;
+    }
+
+    .main-artikel {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+
+    .jumbotron {
+
+        height: 440px;
+    }
+    .jumbotron-body h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .jumbotron-body {
+        padding-top: 50px;
+    }
+
+    .jumbotron-body p {
+        line-height: 20px;
+        font-size: small;
+    }
+
+    .button {
+        padding: auto;
+    }
+    #post, #medicine {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}@media screen and (min-width:992px) {
+    .main-artikel {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .main-artikel h1 {
+        font-size:xx-large;
+    }
+
+    .jumbotron {
+
+        height: 540px;
+    }
+
+    .jumbotron-body h1 {
+        font-size: 45px;
+        line-height: 35px;
+    
+    }
+    .jumbotron-body {
+        padding-top: 110px;
+    }
+
+    .jumbotron-body p {
+        line-height: 20px;
+    
+    }
+    #post, #medicine {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}@media screen and (min-width:1250px) {
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid rgb(199, 143, 0);
+        width: 50%;
+        margin: auto;
+        padding-bottom: 3px;
+        margin-bottom: -6px;
+    }
+    .title-artikel {
+        margin-top: 80px;
+    }
+    .jumbotron-body {
+        padding-top: 150px;
+    }
+    .jumbotron-body p {
+        line-height: 35px;
+    
+    }
+    .quote {
+        margin-top: 400px;
+    }
+    #post, #medicine {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width:1400px) {
+    #quote {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .title-artikel {
+        margin-top: 80px;
+    }
+    .jumbotron-body {
+        padding-top: 150px;
+    }
+    .jumbotron-body p {
+        line-height: 35px;
+    
+    }
+    #post, #medicine {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
