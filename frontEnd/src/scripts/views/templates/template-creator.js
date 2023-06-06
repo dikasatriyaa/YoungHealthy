@@ -50,9 +50,25 @@ const createArtikelHome = (healthy) => `
 </div>
 `;
 
+const createrekomenartikeltemplate = (healthy) => `
+    <div class="container-rekomendasi">
+      <div class="image-rekomendasi">
+        <img src="${healthy.image_url}" class="image-rekomendasi" alt="${healthy.title}">
+      </div>
+      <div class="info-rekomendasi">
+        <h4>${healthy.title}</h4>
+        <p class="headline"> ${healthy.headline}</p>
+        <p class="selengkapnya">
+        <a href="${healthy.source_url}" >Selengkapnya</a>
+        </p>      
+      </div>
+    </div>
+`;
+
 
 export {
   createArtikelTemplate,
   createArtikelHome,
-  createMedicineTemplate
+  createMedicineTemplate,
+  createrekomenartikeltemplate,
 };
