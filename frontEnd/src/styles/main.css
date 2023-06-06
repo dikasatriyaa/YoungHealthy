@@ -1,10 +1,9 @@
+@import 'alatkesehatanPage.css';
 
 .jumbotron {
 
     height: 640px;
 }
-
-
 
 #brand b {
     color: #cf8f32;

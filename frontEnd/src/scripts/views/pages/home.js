@@ -61,28 +61,7 @@ const Home = {
       <div class="col-md-8" id="home-post">
 
       </div>
-      <div class="col-md-4">
-      <div class="card" id="bmi">
-        <div class="card-header bmi-header">
-          <h1>Kalkulator BMI</h1>
-        </div>
-        <div class="card-body">
-          <form action="">
-          <div class="mb-3">
-            <label for="berat" class="form-label">Berapa Berat Anda? (kg)</label>
-            <input type="text" class="form-control" id="berat" placeholder="Berat Badan">
-          </div>
-          <div class="mb-3">
-            <label for="tinggi" class="form-label">Berapa Tinggi Anda? (cm)</label>
-            <input type="text" class="form-control" id="tinggi" placeholder="Berat Badan">
-          </div>
-          <div class="container d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary">Hitung</button>
-          </div>
-        </form>
-      </div>
-      </div>
-    </div>
+      
   </div>
 
         `;

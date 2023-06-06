@@ -1,3 +1,6 @@
+import { createrekomenartikeltemplate } from '../templates/template-creator';
+import TheRestaurantSource from '../../data/younghealth-source';
+
 const AlatKesehatan = {
   async render() {
     return `
@@ -51,6 +54,11 @@ const AlatKesehatan = {
             <p id="modalText"></p>
           </div>
         </div>
+
+        <div class="rekomendasi-artikel">
+          <p class="header-rekomendasi">Baca artikel untuk lebih memahami BMI mu</p>
+          
+        </div>
       </section>
     `;
   },
@@ -66,6 +74,11 @@ const AlatKesehatan = {
     const modal = document.getElementById("Modal");
     const span = document.getElementsByClassName("close")[0];
     const submitButton = document.getElementById("bmiSubmit");
+    const rekomendasiartikel = document.querySelector(".rekomendasi-artikel");
+    const headerrekomendasi = document.querySelector(".header-rekomendasi");
+    const healthPost = await TheRestaurantSource.Rekomendasi();
+    const healthPostArray = Object.values(healthPost);
+    
 
     submitButton.addEventListener("click", function () {
       if (umur.value === "" || tinggi.value === "" || berat.value === "" || (laki.checked === false && perempuan.checked === false)) {
@@ -99,9 +112,15 @@ const AlatKesehatan = {
         result = "Extremely obese";
       }
 
+      headerrekomendasi.style.display = "block";
       resultArea.style.display = "block";
       document.querySelector(".comment-result").innerHTML = `You are <span id="comment-result"">${result}</span>`;
       document.querySelector("#result").innerHTML = bmi.toFixed(2);
+
+      const firstArray = healthPostArray[0];
+      firstArray.forEach((healhty) => {
+        rekomendasiartikel.innerHTML += createrekomenartikeltemplate(healhty);
+      });
     }
 
     span.onclick = function () {
