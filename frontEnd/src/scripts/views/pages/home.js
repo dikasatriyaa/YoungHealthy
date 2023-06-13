@@ -68,6 +68,8 @@ const Home = {
   },
 
   async afterRender() {
+    document.title = 'Young Health';
+
     const healthPost = await TheRestaurantSource.PageHome();
     const healthContainer = document.querySelector('#home-post');
     healthPost.forEach((healhty) => {

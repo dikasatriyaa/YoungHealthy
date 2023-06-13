@@ -57,13 +57,14 @@ const AlatKesehatan = {
 
         <div class="rekomendasi-artikel">
           <p class="header-rekomendasi">Baca artikel untuk lebih memahami BMI mu</p>
-          
         </div>
       </section>
     `;
   },
 
   async afterRender() {
+    document.title = 'Alat Kesehatan - Young Health';
+
     const umur = document.getElementById("umur");
     const tinggi = document.getElementById("tt");
     const berat = document.getElementById("bb");

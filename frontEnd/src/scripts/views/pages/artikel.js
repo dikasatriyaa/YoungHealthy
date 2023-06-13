@@ -10,6 +10,8 @@ const Artikel = {
   },
 
   async afterRender() {
+    document.title = 'Artikel - Young Health';
+
     const healthPost = await YoungHealthSource.PageHome();
     const healthContainer = document.querySelector('#post');
     healthPost.forEach((healhty) => {

@@ -10,6 +10,8 @@ const Medicine = {
   },
 
   async afterRender() {
+    document.title = 'Obat obatan - Young Health';
+
     const healthPosts = await YoungHealthSource.Obat();
     const healthContainer = document.querySelector('#medicine');
     healthPosts.forEach((healhty) => {

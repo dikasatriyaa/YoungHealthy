@@ -24,6 +24,7 @@
   text-align: center;
   color: rgb(199, 143, 0);
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .content-kalkulator-bmi .header-riwayat{
@@ -71,7 +72,7 @@
   padding: 16px;
   width: 100%;
   height: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .result p {
   font-weight: 600;
@@ -144,13 +145,15 @@
 .container-rekomendasi{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   column-gap: 15px;
   padding: 10px;
   border-radius: 10px;
   margin-top: 10px;
   width: 900px;
   height: 300px;
+  padding: 15px; 
+  box-shadow: 0px 0px 10px rgb(198, 158, 59);
 }
 .image-rekomendasi{
   width: 400px;
