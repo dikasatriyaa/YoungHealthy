@@ -1,5 +1,5 @@
 import { createrekomenartikeltemplate } from '../templates/template-creator';
-import TheRestaurantSource from '../../data/younghealth-source';
+import YoungHealthSource from '../../data/younghealth-source';
 
 const AlatKesehatan = {
   async render() {
@@ -77,7 +77,7 @@ const AlatKesehatan = {
     const submitButton = document.getElementById("bmiSubmit");
     const rekomendasiartikel = document.querySelector(".rekomendasi-artikel");
     const headerrekomendasi = document.querySelector(".header-rekomendasi");
-    const healthPost = await TheRestaurantSource.Rekomendasi();
+    const healthPost = await YoungHealthSource.Rekomendasi();
     const healthPostArray = Object.values(healthPost);
     
 

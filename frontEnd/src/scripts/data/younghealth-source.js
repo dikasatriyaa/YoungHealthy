@@ -17,8 +17,8 @@ class YoungHealthSource {
     return responseJson;
   }
 
-  static async detailResto(id) {
-    const response = await fetch(API_ENDPOINT.DETAIL(id));
+  static async detailObat(id) {
+    const response = await fetch(API_ENDPOINT.DETAIL_MEDICINE(id));
     return response.json();
   }
 }
